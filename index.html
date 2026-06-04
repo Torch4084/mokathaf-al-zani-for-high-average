@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البوابة الرياضية | شرح وحل كتاب الرياضيات الصف العاشر - الفصل الثاني</title>
+    <meta name="description" content="البوابة التعليمية الشاملة لشرح مادة الرياضيات للصف العاشر الأساسي - الفصل الدراسي الثاني في الأردن. حلول نموذجية مفصلة لجميع أسئلة كتاب الطالب وكتاب التمارين مع أدوات تفاعلية متطورة.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- KaTeX for LaTeX Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    
+    <!-- Marked for Markdown Parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css?v=13">
+</head>
+<body class="light-mode">
+    <!-- Mobile sidebar overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="app-sidebar" id="app-sidebar-nav">
+            <div class="sidebar-header">
+                <div class="app-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-calculator-combined"></i></div>
+                    <div class="logo-text">
+                        <h2>البوابة الرياضية</h2>
+                        <span>الصف العاشر | الفصل الثاني</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="sidebar-menu" id="sidebar-menu-list">
+                <!-- Navigation menu will be injected dynamically -->
+            </nav>
+            
+            <div class="sidebar-footer">
+                <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="تغيير المظهر">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>المظهر الداكن</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="app-main">
+            <!-- Header -->
+            <header class="app-header">
+                <button id="menu-toggle-btn" class="menu-toggle-btn" aria-label="فتح القائمة"><i class="fa-solid fa-bars"></i></button>
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="search" id="search-input" placeholder="ابحث عن درس، فكرة، أو سؤال..." aria-label="البحث">
+                </div>
+                <div class="header-actions">
+                    <button class="interactive-btn" id="show-tools-btn"><i class="fa-solid fa-screwdriver-wrench"></i> الأدوات التفاعلية</button>
+                </div>
+            </header>
+
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs" id="app-breadcrumbs">
+                <span>الرئيسية</span>
+                <i class="fa-solid fa-chevron-left"></i>
+                <span class="active">لوحة التحكم</span>
+            </div>
+
+            <!-- Scrollable Content Frame -->
+            <div class="content-frame">
+                <!-- Landing Dashboard (default view) -->
+                <section class="content-section active" id="dashboard-section">
+                    <div class="dashboard-hero">
+                        <h1>مرحباً بك في البوابة الرياضية الشاملة</h1>
+                        <p>شرح كامل ومفصل لجميع أفكار ودروس كتاب الرياضيات للصف العاشر (الفصل الدراسي الثاني) مع حلول نموذجية خطوة بخطوة لجميع أسئلة كتاب الطالب وكتاب التمارين.</p>
+                        <div class="hero-stats">
+                            <div class="stat-card">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">وحدات دراسية</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">16</span>
+                                <span class="stat-label">شرح درس كامل</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">اختبارات نهاية الوحدة</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">حلول تفصيلية</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="section-title">اختر الوحدة الدراسية لبدء التعلم</h3>
+                    <div class="units-grid">
+                        <!-- Card Unit 5 -->
+                        <div class="unit-card" onclick="loadItem('unit5_l1')">
+                            <div class="unit-card-badge">الوحدة 5</div>
+                            <div class="unit-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <h3>الاقترانات</h3>
+                            <p>دراسة كثيرات الحدود، تركيب الاقترانات، الاقتران العكسي، والمتتاليات الحسابية والهندسية.</p>
+                            <span class="explore-link">تصفح الدروس <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                        <!-- Card Unit 6 -->
+                        <div class="unit-card" onclick="loadItem('unit6_l1')">
+                            <div class="unit-card-badge">الوحدة 6</div>
+                            <div class="unit-card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                            <h3>المشتقات</h3>
+                            <p>تقدير ميل المنحنيات بيانيا، قواعد الاشتقاق الأساسية وتطبيقات القيم العظمى والصغرى.</p>
+                            <span class="explore-link">تصفح الدروس <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                        <!-- Card Unit 7 -->
+                        <div class="unit-card" onclick="loadItem('unit7_l1')">
+                            <div class="unit-card-badge">الوحدة 7</div>
+                            <div class="unit-card-icon"><i class="fa-solid fa-arrows-to-dot"></i></div>
+                            <h3>المتجهات</h3>
+                            <p>تمثيل المتجهات في المستوى الإحداثي، العمليات الجبرية، والضرب القياسي وتطبيقاته.</p>
+                            <span class="explore-link">تصفح الدروس <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                        <!-- Card Unit 8 -->
+                        <div class="unit-card" onclick="loadItem('unit8_l1')">
+                            <div class="unit-card-badge">الوحدة 8</div>
+                            <div class="unit-card-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                            <h3>الإحصاء والاحتمالات</h3>
+                            <p>أشكال الانتشار والمستقيم الأفضل مطابقة، المنحنيات التكرارية التراكمية، ومقاييس التشتت، واحتمالات الحوادث المتنافية والمستقلة.</p>
+                            <span class="explore-link">تصفح الدروس <i class="fa-solid fa-arrow-left"></i></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Lesson Content Container -->
+                <section class="content-section" id="lesson-section">
+                    <article class="lesson-article markdown-body" id="lesson-content">
+                        <!-- Markdown text compiled to HTML goes here -->
+                    </article>
+                </section>
+
+                <!-- Dynamic Search Results -->
+                <section class="content-section" id="search-results-section">
+                    <h2 class="search-results-title">نتائج البحث عن: <span id="search-query-display">""</span></h2>
+                    <div class="search-results-list" id="search-results-list">
+                        <!-- Search results items go here -->
+                    </div>
+                </section>
+
+                <!-- Math Tools Container -->
+                <section class="content-section" id="tools-section">
+                    <div class="tools-header">
+                        <h2>الأدوات الرياضية التفاعلية</h2>
+                        <p>استخدم هذه الآلات الحاسبة التفاعلية لحل المسائل والتحقق من صحة خطوات الحل تلقائياً.</p>
+                    </div>
+                    
+                    <div class="tools-tabs">
+                        <button class="tool-tab-btn active" onclick="switchToolTab('mean-tool')"><i class="fa-solid fa-table-list"></i> مقاييس التشتت للفئات</button>
+                        <button class="tool-tab-btn" onclick="switchToolTab('scatter-tool')"><i class="fa-solid fa-chart-scatter"></i> شكل الانتشار والانحدار</button>
+                    </div>
+
+                    <!-- Tool 1: Grouped Stats Calculator -->
+                    <div class="tool-tab-content active" id="mean-tool">
+                        <h3>حاسبة مقاييس التشتت للجداول التكرارية ذات الفئات</h3>
+                        <p class="tool-desc">أدخل فترات الفئات وتكراراتها، وسيقوم النظام بحساب الوسط الحسابي والتباين والانحراف المعياري مع عرض جدول خطوات الحل بالتفصيل.</p>
+                        
+                        <div class="tool-form">
+                            <table class="tool-table" id="grouped-stats-input-table">
+                                <thead>
+                                    <tr>
+                                        <th>الفئة (من - إلى)</th>
+                                        <th>التكرار ($f$)</th>
+                                        <th>إجراء</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="number" class="class-low" placeholder="الحد الأدنى" value="10"> إلى <input type="number" class="class-high" placeholder="الحد الأعلى" value="14"></td>
+                                        <td><input type="number" class="class-freq" value="6"></td>
+                                        <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="number" class="class-low" value="15"> إلى <input type="number" class="class-high" value="19"></td>
+                                        <td><input type="number" class="class-freq" value="5"></td>
+                                        <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="number" class="class-low" value="20"> إلى <input type="number" class="class-high" value="24"></td>
+                                        <td><input type="number" class="class-freq" value="12"></td>
+                                        <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="tool-buttons">
+                                <button class="btn btn-secondary" onclick="addTableRow()"><i class="fa-solid fa-plus"></i> إضافة صف فئة</button>
+                                <button class="btn btn-primary" onclick="calculateGroupedStats()"><i class="fa-solid fa-calculator"></i> احسب التشتت بالخطوات</button>
+                            </div>
+                        </div>
+
+                        <div class="tool-results" id="grouped-stats-results" style="display: none;">
+                            <h4>جدول الحل التفصيلي:</h4>
+                            <div class="table-scroll">
+                                <table class="tool-table" id="grouped-stats-output-table">
+                                    <!-- Results table will be built here -->
+                                </table>
+                            </div>
+                            <div class="results-summary-box">
+                                <p><strong>مجموع التكرارات ($\sum f$):</strong> <span id="res-sum-f">0</span></p>
+                                <p><strong>مجموع حاصل ضرب المركز بالتكرار ($\sum f \cdot x$):</strong> <span id="res-sum-fx">0</span></p>
+                                <p><strong>الوسط الحسابي التقديري ($\mu$):</strong> <span id="res-mean">0</span></p>
+                                <p><strong>مجموع مربعات الانحرافات مضروبة في التكرار ($\sum f(x - \mu)^2$):</strong> <span id="res-sum-fdev">0</span></p>
+                                <p><strong>التباين التقديري ($\sigma^2$):</strong> <span id="res-variance">0</span></p>
+                                <p><strong>الانحراف المعياري التقديري ($\sigma$):</strong> <span id="res-stddev">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool 2: Scatter Plot & Regression -->
+                    <div class="tool-tab-content" id="scatter-tool">
+                        <h3>رسم شكل الانتشار ومعادلة المستقيم الأفضل مطابقة</h3>
+                        <p class="tool-desc">أدخل الإحداثيات $(x, y)$ للنقاط، لرسم شكل الانتشار وحساب خط الانحدار الرياضي (المستقيم الأفضل مطابقة) مع إمكانية التنبؤ بالقيم.</p>
+                        
+                        <div class="scatter-split">
+                            <div class="scatter-inputs">
+                                <table class="tool-table" id="scatter-points-table">
+                                    <thead>
+                                        <tr>
+                                            <th>النقطة</th>
+                                            <th>إحداثي $x$</th>
+                                            <th>إحداثي $y$</th>
+                                            <th>حذف</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>A</td>
+                                            <td><input type="number" class="pt-x" value="2"></td>
+                                            <td><input type="number" class="pt-y" value="4"></td>
+                                            <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>B</td>
+                                            <td><input type="number" class="pt-x" value="4"></td>
+                                            <td><input type="number" class="pt-y" value="7"></td>
+                                            <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>C</td>
+                                            <td><input type="number" class="pt-x" value="6"></td>
+                                            <td><input type="number" class="pt-y" value="9"></td>
+                                            <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>D</td>
+                                            <td><input type="number" class="pt-x" value="8"></td>
+                                            <td><input type="number" class="pt-y" value="12"></td>
+                                            <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tool-buttons">
+                                    <button class="btn btn-secondary" onclick="addScatterRow()"><i class="fa-solid fa-plus"></i> إضافة نقطة</button>
+                                    <button class="btn btn-primary" onclick="drawScatterPlot()"><i class="fa-solid fa-chart-line"></i> رسم وتناسب الخط</button>
+                                </div>
+                                
+                                <div class="prediction-box" style="margin-top: 20px;">
+                                    <h4>توقع قيم $y$ بمعلومية $x$:</h4>
+                                    <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+                                        <input type="number" id="predict-x-val" placeholder="أدخل قيمة x" style="width: 120px;">
+                                        <button class="btn btn-primary" onclick="predictYValue()" style="padding: 10px 15px;">تنبؤ بـ y</button>
+                                    </div>
+                                    <p id="prediction-result-txt" style="margin-top: 10px; font-weight: 600; color: var(--primary-color);"></p>
+                                </div>
+                            </div>
+                            
+                            <div class="scatter-display">
+                                <canvas id="scatterCanvas" width="400" height="300"></canvas>
+                                <div class="equation-box" id="scatter-equation-box" style="display: none;">
+                                    <p><strong>معادلة المستقيم الأفضل مطابقة:</strong></p>
+                                    <p class="math-expr" id="scatter-equation-math">y = mx + c</p>
+                                    <p id="scatter-correlation-text" style="margin-top: 5px; font-size: 0.9rem; color: #666;"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bundle Data of Math Lessons -->
+    <script src="data.js"></script>
+    
+    <!-- Client-side Logic Script -->
+    <script>
+        // Theme Management
+        const body = document.body;
+        const themeBtn = document.getElementById('theme-toggle-btn');
+        themeBtn.addEventListener('click', () => {
+            if (body.classList.contains('light-mode')) {
+                body.classList.replace('light-mode', 'dark-mode');
+                themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i> <span>المظهر المضيء</span>';
+            } else {
+                body.classList.replace('dark-mode', 'light-mode');
+                themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i> <span>المظهر الداكن</span>';
+            }
+        });
+
+
+
+        // Initialize marked options to keep original linebreaks and HTML
+        marked.setOptions({
+            breaks: true,
+            gfm: true
+        });
+
+        // Render Sidebar Navigation
+        const sidebarList = document.getElementById('sidebar-menu-list');
+        let navHtml = `<div class="sidebar-item" onclick="loadDashboard()"><i class="fa-solid fa-house"></i> الرئيسية</div>`;
+        
+        for (const unitKey in LESSONS_DATA) {
+            const unit = LESSONS_DATA[unitKey];
+            navHtml += `
+                <div class="sidebar-group">
+                    <div class="group-title" onclick="toggleGroup(this)">
+                        <span>${unit.title.split(':')[0]}</span>
+                        <i class="fa-solid fa-chevron-down group-toggle-icon"></i>
+                    </div>
+                    <div class="group-lessons">
+            `;
+            for (const lesson of unit.lessons) {
+                const icon = lesson.id.includes('test') ? 'fa-square-check' : 'fa-book-open';
+                navHtml += `
+                    <div class="sidebar-item" id="nav-${lesson.id}" onclick="loadItem('${lesson.id}', '${unitKey}')">
+                        <i class="fa-solid ${icon}"></i> ${lesson.title}
+                    </div>
+                `;
+            }
+            navHtml += `</div></div>`;
+        }
+        sidebarList.innerHTML = navHtml;
+
+        // Group Toggle
+        function toggleGroup(el) {
+            const lessons = el.nextElementSibling;
+            const icon = el.querySelector('.group-toggle-icon');
+            lessons.classList.toggle('active');
+            icon.classList.toggle('rotated');
+        }
+
+        // Navigation Actions
+        const dashboardSection = document.getElementById('dashboard-section');
+        const lessonSection = document.getElementById('lesson-section');
+        const searchSection = document.getElementById('search-results-section');
+        const toolsSection = document.getElementById('tools-section');
+        const breadcrumbs = document.getElementById('app-breadcrumbs');
+
+        function loadDashboard() {
+            hideAllSections();
+            dashboardSection.classList.add('active');
+            breadcrumbs.innerHTML = `<span>الرئيسية</span> <i class="fa-solid fa-chevron-left"></i> <span class="active">لوحة التحكم</span>`;
+            sidebar.classList.remove('open');
+            overlay.classList.remove('visible');
+            window.scrollTo(0, 0);
+        }
+
+        function hideAllSections() {
+            dashboardSection.classList.remove('active');
+            lessonSection.classList.remove('active');
+            searchSection.classList.remove('active');
+            toolsSection.classList.remove('active');
+            const items = document.querySelectorAll('.sidebar-item');
+            items.forEach(item => item.classList.remove('active'));
+        }
+
+        // Open the first unit group by default
+        const firstGroup = document.querySelector('.group-lessons');
+        if (firstGroup) {
+            firstGroup.classList.add('active');
+            const firstIcon = firstGroup.previousElementSibling.querySelector('.group-toggle-icon');
+            if (firstIcon) firstIcon.classList.add('rotated');
+        }
+
+        // Load Lesson or Test
+        let currentLessonId = '';
+        function loadItem(id, unitKey = '') {
+            hideAllSections();
+            lessonSection.classList.add('active');
+            currentLessonId = id;
+            
+            // Highlight sidebar item
+            const navItem = document.getElementById(`nav-${id}`);
+            if (navItem) {
+                navItem.classList.add('active');
+                // Ensure parent group is open
+                const parentGroup = navItem.closest('.group-lessons');
+                if (parentGroup && !parentGroup.classList.contains('active')) {
+                    parentGroup.classList.add('active');
+                    const icon = parentGroup.previousElementSibling.querySelector('.group-toggle-icon');
+                    if (icon) icon.classList.remove('rotated');
+                }
+            }
+
+            // Find data
+            let activeUnit = null;
+            let activeLesson = null;
+            
+            if (unitKey) {
+                activeUnit = LESSONS_DATA[unitKey];
+                activeLesson = activeUnit.lessons.find(l => l.id === id);
+            } else {
+                for (const uKey in LESSONS_DATA) {
+                    const l = LESSONS_DATA[uKey].lessons.find(l => l.id === id);
+                    if (l) {
+                        activeUnit = LESSONS_DATA[uKey];
+                        activeLesson = l;
+                        unitKey = uKey;
+                        break;
+                    }
+                }
+            }
+
+            if (activeUnit && activeLesson) {
+                breadcrumbs.innerHTML = `
+                    <span class="breadcrumb-link" onclick="loadDashboard()">الرئيسية</span> 
+                    <i class="fa-solid fa-chevron-left"></i> 
+                    <span>${activeUnit.title.split(':')[0]}</span> 
+                    <i class="fa-solid fa-chevron-left"></i> 
+                    <span class="active">${activeLesson.title}</span>
+                `;
+
+                // Compile Markdown to HTML
+                let compiledHtml = marked.parse(activeLesson.markdown);
+                
+                // Set HTML content
+                const contentContainer = document.getElementById('lesson-content');
+                contentContainer.innerHTML = `
+                    <h1 class="lesson-main-title">${activeLesson.title}</h1>
+                    <hr class="title-hr">
+                    ${compiledHtml}
+                `;
+                
+                // Apply visual processing and card layouts to math questions & solutions
+                processLessonHTML(contentContainer);
+
+                // Run KaTeX equations rendering
+                renderMathInElement(contentContainer, {
+                    delimiters: [
+                        {left: '$$', right: '$$', display: true},
+                        {left: '$', right: '$', display: false}
+                    ],
+                    throwOnError: false
+                });
+            }
+            sidebar.classList.remove('open');
+            overlay.classList.remove('visible');
+            window.scrollTo(0, 0);
+        }
+
+        // Global function to toggle all solutions in the current lesson
+        function toggleAllSolutions(expand) {
+            const solutions = document.querySelectorAll('.question-solution');
+            const buttons = document.querySelectorAll('.solution-toggle-btn');
+            
+            solutions.forEach(sol => {
+                if (expand) {
+                    sol.classList.remove('collapsed');
+                } else {
+                    sol.classList.add('collapsed');
+                }
+            });
+            
+            buttons.forEach(btn => {
+                if (expand) {
+                    btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i> إخفاء خطوات الحل';
+                    btn.classList.add('active');
+                } else {
+                    btn.innerHTML = '<i class="fa-solid fa-eye"></i> عرض خطوات الحل بالتفصيل';
+                    btn.classList.remove('active');
+                }
+            });
+        }
+
+        // Advanced DOM Post-Processor for Math Lessons HTML
+        function processLessonHTML(contentContainer) {
+            const children = Array.from(contentContainer.children);
+            
+            // 1. Group by H2 headings
+            const sections = [];
+            let currentSection = { heading: null, elements: [] };
+            
+            children.forEach(child => {
+                if (child.tagName === 'H2') {
+                    if (currentSection.elements.length > 0 || currentSection.heading) {
+                        sections.push(currentSection);
+                    }
+                    currentSection = { heading: child, elements: [] };
+                } else if (child.tagName === 'H1') {
+                    // Skip main title
+                } else {
+                    currentSection.elements.push(child);
+                }
+            });
+            if (currentSection.elements.length > 0 || currentSection.heading) {
+                sections.push(currentSection);
+            }
+            
+            // Clear content container except title elements
+            const mainTitle = contentContainer.querySelector('.lesson-main-title');
+            const titleHr = contentContainer.querySelector('.title-hr');
+            contentContainer.innerHTML = '';
+            if (mainTitle) contentContainer.appendChild(mainTitle);
+            if (titleHr) contentContainer.appendChild(titleHr);
+            
+            // Add Expand/Collapse All Toolbar
+            const toolbar = document.createElement('div');
+            toolbar.className = 'lesson-toolbar';
+            toolbar.innerHTML = `
+                <button class="toolbar-btn expand-all-btn" onclick="toggleAllSolutions(true)">
+                    <i class="fa-solid fa-folder-open"></i> عرض جميع حلول الدرس
+                </button>
+                <button class="toolbar-btn collapse-all-btn" onclick="toggleAllSolutions(false)">
+                    <i class="fa-solid fa-folder"></i> إخفاء جميع الحلول
+                </button>
+            `;
+            contentContainer.appendChild(toolbar);
+            
+            // Helper function to split combined question-solutions
+            function splitCombinedQuestion(el) {
+                let html = el.innerHTML.trim();
+                
+                // Pattern 1: number outside strong, e.g. "1) <strong>math</strong>: answer"
+                let m1 = html.match(/^([0-9]+\)|[a-d]\)|السؤال\s*[0-9]*:?|الفرع\s*[a-d]:?|فرع\s*[a-d]:?)\s*<(strong|b)>([\s\S]*?)<\/strong>\s*:\s*([\s\S]+)/i);
+                if (m1) {
+                    let qEl = document.createElement('p');
+                    qEl.innerHTML = `${m1[1]} <strong>${m1[3]}</strong>`;
+                    let sEl = document.createElement('p');
+                    sEl.innerHTML = m1[4];
+                    return [qEl, sEl];
+                }
+                
+                // Pattern 2: number inside strong, e.g. "<strong>1) math</strong>: answer"
+                let m2 = html.match(/^<(strong|b)>([0-9]+\)|[a-d]\)|السؤال\s*[0-9]*:?|الفرع\s*[a-d]:?|فرع\s*[a-d]:?)([\s\S]*?)<\/strong>\s*:\s*([\s\S]+)/i);
+                if (m2) {
+                    let qEl = document.createElement('p');
+                    qEl.innerHTML = `<strong>${m2[2]}${m2[3]}</strong>`;
+                    let sEl = document.createElement('p');
+                    sEl.innerHTML = m2[4];
+                    return [qEl, sEl];
+                }
+
+                // Pattern 3: no strong tag, just a colon divider, e.g. "1) question : answer"
+                let m3 = html.match(/^([0-9]+\)|[a-d]\)|السؤال\s*[0-9]*:?|الفرع\s*[a-d]:?|فرع\s*[a-d]:?)\s*([^:]+?)\s*:\s*([\s\S]+)/i);
+                if (m3) {
+                    let qEl = document.createElement('p');
+                    qEl.innerHTML = `${m3[1]} ${m3[2]}`;
+                    let sEl = document.createElement('p');
+                    sEl.innerHTML = m3[3];
+                    return [qEl, sEl];
+                }
+                
+                return [el];
+            }
+
+            // Process each section
+            sections.forEach((sec) => {
+                const sectionBlock = document.createElement('div');
+                sectionBlock.className = 'lesson-section-block';
+                
+                let headingText = '';
+                if (sec.heading) {
+                    headingText = sec.heading.innerText.trim();
+                    sectionBlock.appendChild(sec.heading);
+                }
+                
+                // Determine section type
+                let secType = 'explanation';
+                let secBadgeHtml = '';
+                
+                // FIX: solution sections should not be classified as explanation if they contain words like "أتحقق" or "حلول"
+                let isExplanation = headingText.includes('المفاهيم') || (headingText.includes('شرح') && !headingText.includes('حلول') && !headingText.includes('أتحقق'));
+                
+                if (isExplanation) {
+                    secType = 'explanation';
+                    secBadgeHtml = `<div class="section-badge badge-explanation"><i class="fa-solid fa-graduation-cap"></i> الشرح والمفاهيم الأساسية</div>`;
+                } else if (headingText.includes('أتحقق من فهمي')) {
+                    secType = 'check-understanding';
+                    secBadgeHtml = `<div class="section-badge badge-check-understanding"><i class="fa-solid fa-circle-check"></i> أتحقق من فهمي</div>`;
+                } else if (headingText.includes('أتدرب وأحل المسائل')) {
+                    secType = 'practice-problems';
+                    secBadgeHtml = `<div class="section-badge badge-practice-problems"><i class="fa-solid fa-list-check"></i> أتدرب وأحل المسائل</div>`;
+                } else if (headingText.includes('مهارات التفكير')) {
+                    secType = 'thinking-skills';
+                    secBadgeHtml = `<div class="section-badge badge-thinking-skills"><i class="fa-solid fa-brain"></i> مهارات التفكير العليا</div>`;
+                } else if (headingText.includes('التمارين')) {
+                    secType = 'workbook';
+                    secBadgeHtml = `<div class="section-badge badge-workbook"><i class="fa-solid fa-book-open-reader"></i> حلول كتاب التمارين</div>`;
+                } else if (headingText.includes('اختبار')) {
+                    secType = 'unit-test';
+                    secBadgeHtml = `<div class="section-badge badge-unit-test"><i class="fa-solid fa-award"></i> اختبار نهاية الوحدة</div>`;
+                }
+                
+                sectionBlock.className = `lesson-section-block sec-${secType}`;
+                
+                if (secBadgeHtml) {
+                    const badgeContainer = document.createElement('div');
+                    badgeContainer.innerHTML = secBadgeHtml;
+                    sectionBlock.appendChild(badgeContainer.firstChild);
+                }
+                
+                if (secType === 'explanation') {
+                    // Just append explanation elements directly
+                    sec.elements.forEach(el => {
+                        sectionBlock.appendChild(el);
+                    });
+                } else {
+                    // Group questions in workbook, practice, test, etc.
+                    const qGroups = [];
+                    let currentQ = { header: null, elements: [] };
+                    
+                    // Flatten lists
+                    const flatElements = [];
+                    sec.elements.forEach(child => {
+                        if (child.tagName === 'OL' || child.tagName === 'UL') {
+                            const items = Array.from(child.querySelectorAll('li'));
+                            items.forEach(li => {
+                                const p = document.createElement('p');
+                                p.innerHTML = li.innerHTML;
+                                flatElements.push(p);
+                            });
+                        } else {
+                            flatElements.push(child);
+                        }
+                    });
+
+                    // Normalize elements: split combined question-solutions, and split <br> paragraphs
+                    const normalizedElements = [];
+                    flatElements.forEach(el => {
+                        const parts = splitCombinedQuestion(el);
+                        parts.forEach(part => {
+                            if (part.tagName === 'P' && part.innerHTML.toLowerCase().includes('<br>')) {
+                                const subParts = part.innerHTML.split(/<br\s*\/?>/i);
+                                subParts.forEach(sub => {
+                                    const trimmed = sub.trim();
+                                    if (trimmed) {
+                                        const newP = document.createElement('p');
+                                        newP.innerHTML = trimmed;
+                                        normalizedElements.push(newP);
+                                    }
+                                });
+                            } else {
+                                normalizedElements.push(part);
+                            }
+                        });
+                    });
+
+                    normalizedElements.forEach(el => {
+                        const text = el.innerText || '';
+                        const trimmedText = text.trim();
+                        
+                        const isQuestionStart = 
+                            /^(?:[0-9]+\)|[a-d]\)|السؤال|فرع|الفرع)/.test(trimmedText) || 
+                            /^\*\*(?:[0-9]+\)|[a-d]\)|السؤال|فرع)\s*:?\s*\*\*/.test(trimmedText) ||
+                            /<strong>\s*(?:[0-9]+\)|[a-d]\)|السؤال|فرع)\s*:?\s*<\/strong>/.test(el.innerHTML);
+                        
+                        if (isQuestionStart) {
+                            if (currentQ.elements.length > 0 || currentQ.header) {
+                                qGroups.push(currentQ);
+                            }
+                            currentQ = { header: el, elements: [] };
+                        } else {
+                            if (!currentQ.header) {
+                                sectionBlock.appendChild(el);
+                            } else {
+                                currentQ.elements.push(el);
+                            }
+                        }
+                    });
+                
+                    if (currentQ.elements.length > 0 || currentQ.header) {
+                        qGroups.push(currentQ);
+                    }
+
+                    // Render questions inside cards
+                    qGroups.forEach(q => {
+                        const nonEmptyEls = q.elements.filter(e => (e.innerText||'').trim());
+                        
+                        if (nonEmptyEls.length > 0) {
+                            const qCard = document.createElement('div');
+                            qCard.className = 'question-card';
+                            
+                            const qHeader = document.createElement('div');
+                            qHeader.className = 'question-header';
+                            
+                            let qText = q.header.innerHTML;
+                            const textContent = q.header.innerText.trim();
+                            let match = textContent.match(/^([0-9]+\)|[a-d]\)|السؤال\s*[0-9]*:?|الفرع\s*[a-d]:?|فرع\s*[a-d]:?)/);
+                            let badgeLabel = '';
+                            
+                            if (match) {
+                                badgeLabel = match[0];
+                                qText = qText.replace(badgeLabel, '');
+                            } else if (q.header.tagName === 'H3' || q.header.tagName === 'H4') {
+                                badgeLabel = 'سؤال';
+                            }
+                            
+                            const toggleIcon = document.createElement('i');
+                            toggleIcon.className = 'fa-solid fa-chevron-down toggle-icon';
+                            
+                            if (badgeLabel) {
+                                qHeader.innerHTML = `<span class="question-number-badge">${badgeLabel}</span> <span class="question-title-text">${qText}</span>`;
+                            } else {
+                                qHeader.innerHTML = `<span class="question-number-badge"><i class="fa-solid fa-question"></i></span> <span class="question-title-text">${qText}</span>`;
+                            }
+                            qHeader.appendChild(toggleIcon);
+                            qCard.appendChild(qHeader);
+
+                            const totalChars = nonEmptyEls.reduce((n, e) => n + (e.innerText||'').trim().length, 0);
+                            const hasMathBlock = nonEmptyEls.some(e => e.querySelector('.katex-display') || e.innerHTML.includes('$$'));
+                            const isSimple = nonEmptyEls.length <= 2 && totalChars < 300 && !hasMathBlock;
+
+                            const solWrapper = document.createElement('div');
+                            solWrapper.className = 'question-solution';
+
+                            if (isSimple) {
+                                // COMPACT MODE — clean answer display
+                                const compactDiv = document.createElement('div');
+                                compactDiv.className = 'sol-compact';
+                                nonEmptyEls.forEach(solEl => {
+                                    const row = document.createElement('div');
+                                    row.className = 'sol-compact-row';
+                                    row.innerHTML = `<div dir="rtl">${solEl.innerHTML}</div>`;
+                                    compactDiv.appendChild(row);
+                                });
+                                solWrapper.appendChild(compactDiv);
+                            } else {
+                                // FULL STEPS MODE — numbered cards
+                                const solHeader = document.createElement('div');
+                                solHeader.className = 'sol-header';
+                                solHeader.innerHTML = `
+                                    <span class="sol-header-icon"><i class="fa-solid fa-list-check"></i></span>
+                                    <span class="sol-header-text">خطوات الحل</span>
+                                    <span class="sol-header-count">${nonEmptyEls.length} خطوة</span>
+                                `;
+                                solWrapper.appendChild(solHeader);
+
+                                const timeline = document.createElement('div');
+                                timeline.className = 'solution-timeline';
+                                let stepNum = 0;
+
+                                nonEmptyEls.forEach(solEl => {
+                                    const trimmedText = (solEl.innerText||'').trim();
+                                    const isResult = /(?:الناتج:|الجواب:|النتيجة:|إذن:|وبالتالي:|∴|منه:|إذن فإن)/.test(trimmedText);
+                                    const stepDiv = document.createElement('div');
+                                    if (isResult) {
+                                        stepDiv.className = 'solution-step step-result';
+                                        stepDiv.innerHTML = `<div class="step-num-wrap step-result-icon"><i class="fa-solid fa-check"></i></div><div class="step-body-wrap" dir="rtl">${solEl.innerHTML}</div>`;
+                                    } else {
+                                        stepNum++;
+                                        stepDiv.className = 'solution-step';
+                                        stepDiv.innerHTML = `<div class="step-num-wrap">${stepNum}</div><div class="step-body-wrap" dir="rtl">${solEl.innerHTML}</div>`;
+                                    }
+                                    timeline.appendChild(stepDiv);
+                                });
+                                solWrapper.appendChild(timeline);
+                            }
+
+                            // Toggle header click
+                            qHeader.style.cursor = 'pointer';
+                            qHeader.addEventListener('click', () => {
+                                const isOpen = qCard.classList.toggle('open');
+                                toggleIcon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+                            });
+                            qCard.appendChild(solWrapper);
+                            sectionBlock.appendChild(qCard);
+                        } else {
+                            // If there are no solution elements, it means this was an instruction or heading!
+                            // Render it as a normal element directly in the page flow!
+                            sectionBlock.appendChild(q.header);
+                        }
+                    });
+                }
+                
+                contentContainer.appendChild(sectionBlock);
+            });
+        }
+
+        // Tools Section Toggling
+        const showToolsBtn = document.getElementById('show-tools-btn');
+        showToolsBtn.addEventListener('click', () => {
+            hideAllSections();
+            toolsSection.classList.add('active');
+            breadcrumbs.innerHTML = `<span class="breadcrumb-link" onclick="loadDashboard()">الرئيسية</span> <i class="fa-solid fa-chevron-left"></i> <span class="active">الأدوات التفاعلية</span>`;
+            sidebar.classList.remove('open');
+            overlay.classList.remove('visible');
+            drawScatterPlot(); // render canvas init
+        });
+
+        // Mobile sidebar toggle
+        const menuToggleBtn = document.getElementById('menu-toggle-btn');
+        const overlay = document.getElementById('sidebar-overlay');
+        const sidebar = document.getElementById('app-sidebar-nav');
+        menuToggleBtn.addEventListener('click', () => {
+            const isOpen = sidebar.classList.toggle('open');
+            overlay.classList.toggle('visible', isOpen);
+        });
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('visible');
+        });
+
+        function switchToolTab(tabId) {
+            const tabs = document.querySelectorAll('.tool-tab-btn');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            const contents = document.querySelectorAll('.tool-tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            const activeTab = Array.from(tabs).find(tab => tab.getAttribute('onclick').includes(tabId));
+            if (activeTab) activeTab.classList.add('active');
+            
+            const activeContent = document.getElementById(tabId);
+            if (activeContent) activeContent.classList.add('active');
+            
+            if (tabId === 'scatter-tool') {
+                setTimeout(drawScatterPlot, 50); // delay to ensure rendering matches dimensions
+            }
+        }
+
+        // Search Engine
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim().toLowerCase();
+            if (query.length < 2) {
+                if (query.length === 0) loadDashboard();
+                return;
+            }
+            
+            hideAllSections();
+            searchSection.classList.add('active');
+            document.getElementById('search-query-display').innerText = `"${query}"`;
+            breadcrumbs.innerHTML = `<span class="breadcrumb-link" onclick="loadDashboard()">الرئيسية</span> <i class="fa-solid fa-chevron-left"></i> <span class="active">نتائج البحث</span>`;
+            
+            let resultsHtml = '';
+            let resultsCount = 0;
+            
+            for (const unitKey in LESSONS_DATA) {
+                const unit = LESSONS_DATA[unitKey];
+                for (const lesson of unit.lessons) {
+                    const matchInTitle = lesson.title.toLowerCase().includes(query);
+                    const matchInContent = lesson.markdown.toLowerCase().includes(query);
+                    
+                    if (matchInTitle || matchInContent) {
+                        resultsCount++;
+                        let snippet = '';
+                        if (matchInContent) {
+                            const index = lesson.markdown.toLowerCase().indexOf(query);
+                            snippet = '...' + lesson.markdown.substring(Math.max(0, index - 80), Math.min(lesson.markdown.length, index + 100)) + '...';
+                            snippet = snippet.replace(/[*#`$\n]/g, ' '); // Clean markdown formatting
+                        } else {
+                            snippet = lesson.markdown.substring(0, 150).replace(/[*#`$\n]/g, ' ') + '...';
+                        }
+                        
+                        resultsHtml += `
+                            <div class="search-result-item" onclick="loadItem('${lesson.id}', '${unitKey}')">
+                                <div class="result-unit-badge">${unit.title.split(':')[0]}</div>
+                                <h3>${lesson.title}</h3>
+                                <p class="result-snippet">${snippet}</p>
+                                <span class="result-action">عرض الدرس <i class="fa-solid fa-arrow-left"></i></span>
+                            </div>
+                        `;
+                    }
+                }
+            }
+            
+            if (resultsCount === 0) {
+                resultsHtml = `
+                    <div class="no-results">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <p>عذراً، لم نجد أي تطابقات للبحث عن "${query}". جرب استخدام كلمات مفتاحية أخرى مثل "مستقيم" أو "وسيط" أو "انحراف".</p>
+                    </div>
+                `;
+            }
+            
+            document.getElementById('search-results-list').innerHTML = resultsHtml;
+        });
+
+        // Tool 1 Implementation: Grouped Statistics Calculator
+        function addTableRow() {
+            const tbody = document.querySelector('#grouped-stats-input-table tbody');
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><input type="number" class="class-low" placeholder="الحد الأدنى"> إلى <input type="number" class="class-high" placeholder="الحد الأعلى"></td>
+                <td><input type="number" class="class-freq" value="0"></td>
+                <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+            `;
+            tbody.appendChild(tr);
+        }
+
+        function deleteTableRow(btn) {
+            const tr = btn.closest('tr');
+            tr.remove();
+        }
+
+        function calculateGroupedStats() {
+            const rows = document.querySelectorAll('#grouped-stats-input-table tbody tr');
+            const data = [];
+            let totalF = 0;
+            let sumFX = 0;
+            
+            rows.forEach(row => {
+                const low = parseFloat(row.querySelector('.class-low').value);
+                const high = parseFloat(row.querySelector('.class-high').value);
+                const f = parseFloat(row.querySelector('.class-freq').value);
+                
+                if (!isNaN(low) && !isNaN(high) && !isNaN(f)) {
+                    const x = (low + high) / 2;
+                    const fx = f * x;
+                    totalF += f;
+                    sumFX += fx;
+                    data.push({ low, high, x, f, fx });
+                }
+            });
+
+            if (data.length === 0 || totalF === 0) {
+                alert('الرجاء إدخال بيانات صحيحة وفئات صالحة وتكرارات أكبر من صفر.');
+                return;
+            }
+
+            const mean = sumFX / totalF;
+            let sumFDev2 = 0;
+            let sumFX2 = 0;
+            
+            // Build detailed output table
+            let tableHtml = `
+                <thead>
+                    <tr>
+                        <th>الفئة</th>
+                        <th>المركز ($x$)</th>
+                        <th>التكرار ($f$)</th>
+                        <th>$f \cdot x$</th>
+                        <th>الانحراف ($x - \mu$)</th>
+                        <th>الانحراف مربع ($x - \mu)^2$</th>
+                        <th>$f \cdot (x - \mu)^2$</th>
+                    </tr>
+                </thead>
+                <tbody>
+            `;
+
+            data.forEach(item => {
+                const dev = item.x - mean;
+                const dev2 = dev * dev;
+                const fdev2 = item.f * dev2;
+                sumFDev2 += fdev2;
+                sumFX2 += item.f * item.x * item.x;
+                
+                tableHtml += `
+                    <tr>
+                        <td>[${item.low} - ${item.high})</td>
+                        <td>${item.x}</td>
+                        <td>${item.f}</td>
+                        <td>${item.fx.toFixed(2)}</td>
+                        <td>${dev.toFixed(2)}</td>
+                        <td>${dev2.toFixed(2)}</td>
+                        <td>${fdev2.toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+
+            const variance = sumFDev2 / totalF;
+            const stddev = Math.sqrt(variance);
+
+            tableHtml += `
+                <tr class="totals-row">
+                    <td>المجموع</td>
+                    <td>-</td>
+                    <td>${totalF}</td>
+                    <td>${sumFX.toFixed(2)}</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>${sumFDev2.toFixed(2)}</td>
+                </tr>
+                </tbody>
+            `;
+
+            const outputTable = document.getElementById('grouped-stats-output-table');
+            outputTable.innerHTML = tableHtml;
+
+            // Update Summary boxes
+            document.getElementById('res-sum-f').innerText = totalF;
+            document.getElementById('res-sum-fx').innerText = sumFX.toFixed(2);
+            document.getElementById('res-mean').innerText = mean.toFixed(4);
+            document.getElementById('res-sum-fdev').innerText = sumFDev2.toFixed(2);
+            document.getElementById('res-variance').innerText = variance.toFixed(4);
+            document.getElementById('res-stddev').innerText = stddev.toFixed(4);
+
+            document.getElementById('grouped-stats-results').style.display = 'block';
+            
+            // Render Math in results
+            renderMathInElement(document.getElementById('grouped-stats-results'), {
+                delimiters: [
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError: false
+            });
+        }
+
+        // Tool 2 Implementation: Scatter Plot
+        function addScatterRow() {
+            const tbody = document.querySelector('#scatter-points-table tbody');
+            const charCode = 65 + tbody.children.length; // A, B, C...
+            const label = String.fromCharCode(charCode);
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${label}</td>
+                <td><input type="number" class="pt-x" value="0"></td>
+                <td><input type="number" class="pt-y" value="0"></td>
+                <td><button class="table-delete-btn" onclick="deleteTableRow(this)"><i class="fa-solid fa-trash"></i></button></td>
+            `;
+            tbody.appendChild(tr);
+        }
+
+        let regressionModel = { slope: 0, intercept: 0, r: 0 };
+
+        function drawScatterPlot() {
+            const canvas = document.getElementById('scatterCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            
+            const rows = document.querySelectorAll('#scatter-points-table tbody tr');
+            const points = [];
+            
+            let minX = Infinity, maxX = -Infinity;
+            let minY = Infinity, maxY = -Infinity;
+
+            rows.forEach(row => {
+                const x = parseFloat(row.querySelector('.pt-x').value);
+                const y = parseFloat(row.querySelector('.pt-y').value);
+                if (!isNaN(x) && !isNaN(y)) {
+                    points.push({ x, y });
+                    if (x < minX) minX = x;
+                    if (x > maxX) maxX = x;
+                    if (y < minY) minY = y;
+                    if (y > maxY) maxY = y;
+                }
+            });
+
+            if (points.length < 2) {
+                // draw dummy empty graph
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.font = '14px Cairo';
+                ctx.fillStyle = '#666';
+                ctx.fillText('الرجاء إدخال نقطتين على الأقل للرسم', 100, 150);
+                return;
+            }
+
+            // Adjust min/max bounds to give padding
+            const rangeX = maxX - minX === 0 ? 10 : maxX - minX;
+            const rangeY = maxY - minY === 0 ? 10 : maxY - minY;
+            
+            minX -= rangeX * 0.15;
+            maxX += rangeX * 0.15;
+            minY -= rangeY * 0.15;
+            maxY += rangeY * 0.15;
+
+            if (minX > 0) minX = 0; // standard quadrant layout
+            if (minY > 0) minY = 0;
+
+            const finalRangeX = maxX - minX;
+            const finalRangeY = maxY - minY;
+
+            // Dimensions mapping helper
+            const margin = { top: 20, right: 20, bottom: 40, left: 45 };
+            const plotW = canvas.width - margin.left - margin.right;
+            const plotH = canvas.height - margin.top - margin.bottom;
+
+            function toCanvasCoord(x, y) {
+                const cx = margin.left + ((x - minX) / finalRangeX) * plotW;
+                const cy = margin.top + (1 - (y - minY) / finalRangeY) * plotH;
+                return { cx, cy };
+            }
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            const axesColor = isDarkMode ? '#64748b' : '#94a3b8';
+            const gridColor = isDarkMode ? '#334155' : '#e2e8f0';
+            const textColor = isDarkMode ? '#94a3b8' : '#475569';
+            const pointColor = isDarkMode ? '#38bdf8' : '#3b82f6';
+            const pointBorder = isDarkMode ? '#1e293b' : '#ffffff';
+            const lineColor = isDarkMode ? '#fb7185' : '#ef4444';
+
+            // Draw grid and ticks
+            ctx.strokeStyle = gridColor;
+            ctx.lineWidth = 1;
+            ctx.fillStyle = textColor;
+            ctx.font = '10px Cairo';
+            
+            // X ticks
+            const stepX = finalRangeX / 5;
+            for (let i = 0; i <= 5; i++) {
+                const val = minX + i * stepX;
+                const c = toCanvasCoord(val, 0);
+                
+                // grid vertical
+                ctx.beginPath();
+                ctx.moveTo(c.cx, margin.top);
+                ctx.lineTo(c.cx, canvas.height - margin.bottom);
+                ctx.stroke();
+                
+                // label
+                ctx.fillText(val.toFixed(1), c.cx - 10, canvas.height - margin.bottom + 18);
+            }
+
+            // Y ticks
+            const stepY = finalRangeY / 5;
+            for (let i = 0; i <= 5; i++) {
+                const val = minY + i * stepY;
+                const c = toCanvasCoord(0, val);
+                
+                // grid horizontal
+                ctx.beginPath();
+                ctx.moveTo(margin.left, c.cy);
+                ctx.lineTo(canvas.width - margin.right, c.cy);
+                ctx.stroke();
+                
+                // label
+                ctx.fillText(val.toFixed(1), margin.left - 38, c.cy + 4);
+            }
+
+            // Draw axes
+            ctx.strokeStyle = axesColor;
+            ctx.lineWidth = 2;
+            
+            // X axis
+            const axisY0 = toCanvasCoord(0, 0).cy;
+            ctx.beginPath();
+            ctx.moveTo(margin.left, axisY0);
+            ctx.lineTo(canvas.width - margin.right, axisY0);
+            ctx.stroke();
+
+            // Y axis
+            const axisX0 = toCanvasCoord(0, 0).cx;
+            ctx.beginPath();
+            ctx.moveTo(axisX0, margin.top);
+            ctx.lineTo(axisX0, canvas.height - margin.bottom);
+            ctx.stroke();
+
+            // Calculate Linear Regression line
+            const n = points.length;
+            let sumX = 0, sumY = 0, sumXY = 0, sumXX = 0, sumYY = 0;
+            
+            points.forEach(p => {
+                sumX += p.x;
+                sumY += p.y;
+                sumXY += p.x * p.y;
+                sumXX += p.x * p.x;
+                sumYY += p.y * p.y;
+            });
+
+            const slope = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
+            const intercept = (sumY - slope * sumX) / n;
+            
+            // Correlation coefficient r
+            const numR = n * sumXY - sumX * sumY;
+            const denR = Math.sqrt((n * sumXX - sumX * sumX) * (n * sumYY - sumY * sumY));
+            const r = denR === 0 ? 0 : numR / denR;
+
+            regressionModel = { slope, intercept, r };
+
+            // Draw line of best fit
+            const ptStart = toCanvasCoord(minX, slope * minX + intercept);
+            const ptEnd = toCanvasCoord(maxX, slope * maxX + intercept);
+
+            ctx.strokeStyle = lineColor;
+            ctx.lineWidth = 3;
+            ctx.shadowBlur = 4;
+            ctx.shadowColor = lineColor;
+            ctx.beginPath();
+            ctx.moveTo(ptStart.cx, ptStart.cy);
+            ctx.lineTo(ptEnd.cx, ptEnd.cy);
+            ctx.stroke();
+            
+            // Reset shadows for points
+            ctx.shadowBlur = 0;
+
+            // Draw scatter points
+            points.forEach(p => {
+                const c = toCanvasCoord(p.x, p.y);
+                ctx.fillStyle = pointColor;
+                ctx.shadowBlur = 6;
+                ctx.shadowColor = pointColor;
+                ctx.beginPath();
+                ctx.arc(c.cx, c.cy, 6, 0, 2 * Math.PI);
+                ctx.fill();
+                
+                ctx.shadowBlur = 0;
+                ctx.strokeStyle = pointBorder;
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            });
+
+            // Display Results
+            const eqBox = document.getElementById('scatter-equation-box');
+            const mathEl = document.getElementById('scatter-equation-math');
+            const corrEl = document.getElementById('scatter-correlation-text');
+            
+            const sign = intercept >= 0 ? '+' : '-';
+            const absIntercept = Math.abs(intercept);
+            
+            mathEl.innerText = `y = ${slope.toFixed(3)}x ${sign} ${absIntercept.toFixed(3)}`;
+            
+            let rDesc = 'لا يوجد ارتباط';
+            if (r > 0.7) rDesc = 'ارتباط موجب قوي';
+            else if (r > 0.3) rDesc = 'ارتباط موجب ضعيف';
+            else if (r < -0.7) rDesc = 'ارتباط سالب قوي';
+            else if (r < -0.3) rDesc = 'ارتباط سالب ضعيف';
+
+            corrEl.innerText = `معامل الارتباط (r) = ${r.toFixed(3)} (${rDesc})`;
+            eqBox.style.display = 'block';
+
+            renderMathInElement(eqBox, {
+                delimiters: [{left: '$$', right: '$$', display: true}],
+                throwOnError: false
+            });
+        }
+
+        function predictYValue() {
+            const xVal = parseFloat(document.getElementById('predict-x-val').value);
+            if (isNaN(xVal)) {
+                alert('الرجاء إدخال قيمة عددية صحيحة لـ x.');
+                return;
+            }
+            const yVal = regressionModel.slope * xVal + regressionModel.intercept;
+            document.getElementById('prediction-result-txt').innerText = `القيمة المتوقعة لـ y هي: ${yVal.toFixed(3)}`;
+        }
+
+        // On Load: display the Dashboard
+        window.addEventListener('DOMContentLoaded', () => {
+            loadDashboard();
+        });
+    </script>
+</body>
+</html>
