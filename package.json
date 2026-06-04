@@ -1,0 +1,12 @@
+{
+  "name": "math-10th-semester2",
+  "version": "1.0.0",
+  "description": "Explaining and solving 10th-grade math textbook (second semester)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx -y http-server ./"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}
